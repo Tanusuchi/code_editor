@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/doc.css">
+    
+</head>
+
+<body>
+    <header class="header">
+        <img src="image/Editox .png" alt="logo" class="logo">
+
+        <nav class="navbar">
+            <ul class="navlis">
+                <li><a class="navli" href="/">HOME</a></li>
+                <li><a class="navli" href="/neweditor.html">Editor</a></li>
+                <li><a class="navli" href="/about.html">about</a></li>
+                <li><a class="navli" href="#">documant</a></li>
+                <li><div class="dropdown">
+                    <button class="dropbtn">Resources</button>
+                    <!-- The dropdown content -->
+                    <div class="dropdown-content">
+                        <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
+                        <a href="https://fonts.google.com/" target="_blank">Google fonts</a>
+                        <a href="https://fontawesome.com/search?m=free&o=r" target="_blank">Font Awesome</a>
+                    </div></li>
+                <li><a class="navli" href="/contct.html">contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="mobile-nav">
+            <ion-icon name="reorder-three-outline" class="mabile-nav-icon"></ion-icon>
+            <ion-icon name="close-outline" class="mabile-nav-icon"></ion-icon>
+        </div>
+
+
+
+    </header>
+
+
+    <div class="main">
+
+
+        <div class="sc_nav" >
+            <div class="lan_item">
+                <div class="iconbr fa-solid fa-bars">
+                </div>
+                <ul>
+                    <li><a href="/page.html">HTML</a></li>
+                    <li><a href="/css.html">CSS</a></li>
+                    <li><a href="#">JAVASCRIPT</a></li>
+                </ul>
+
+
+            </div>
+        </div>
+
+        <div class="maincont">
+<div class="stakydiv">
+            <div class="side_bar">
+
+                <h1>Javascript Documantation</h1>
+                <ul>
+
+                    <a href="#jsintro">
+                        <li>JavaScript Introduction</li>
+                    </a>
+                    <a href="#jswhere">
+                        <li>JavaScript Where To</li>
+                    </a>
+                    <a href="#jsout">
+                        <li>JavaScript Output</li>
+                    </a>
+                    <a href="#jsstat">
+                        <li>JavaScript Statements</li>
+                    </a>
+                    <a href="#jssyntx">
+                        <li>JavaScript Syntax</li>
+                    </a>
+                    <a href="#jscomman">
+                        <li>JavaScript Comments</li>
+                    </a>
+                    <a href="#jsvariab">
+                        <li>JavaScript Variables</li>
+                    </a>
+                    <a href="#jsoper">
+                        <li>JavaScript Operators</li>
+                    </a>
+                    <a href="#jsdatyp">
+                        <li>JavaScript Data Types</li>
+                    </a>
+                    <a href="#jsfun">
+                        <li>JavaScript Functions</li>
+                    </a>
+                    <a href="#jsobj">
+                        <li>JavaScript Objects</li>
+                    </a>
+
+                </ul>
+
+
+            </div>
+        </div>
+            <div class="maindoc" style="overflow-x: hidden;">
+
+                <section id="jshome">
+                    <h1>JavaScript Introduction</h1>
+                    <article>
+                        <h1>JavaScript Can Change HTML Content</h1>
+                        <p>
+                            One of many JavaScript HTML methods is getElementById().<br>
+                            <br>
+
+                            The example below "finds" an HTML element (with id="demo"), and changes the element content
+                            (innerHTML) to "Hello JavaScript":
+                        </p>
+
+
+
+                        <div class="code_div">
+                            <h2>Example</h2>
+                            <div class="code">
+                                document.getElementById("demo").innerHTML = "Hello JavaScript";
+                            </div>
+                        </div>
+
+                        <h1>JavaScript Can Change HTML Styles (CSS)</h1>
+                        <p>Changing the style of an HTML element, is a variant of changing an HTML attribute:</p>
+
+                        <div class="code_div">
+                            <h2>Example</h2>
+                            <div class="code">
+                                document.getElementById("demo").style.fontSize = "35px";
+                            </div>
+                        </div>
+
+
+                    </article>
+                </section>
+
+
+                <section id="jswhere">
+                    <h1>JavaScript Where To</h1>
+                    <article>
+                        <h1>The <i class="fa-solid fa-angle-left"></i>script> Tag </h1>
+                        <p>
+                            In HTML, JavaScript code is inserted between <i class="fa-solid fa-angle-left"></i>script<i
+                                class="fa-solid fa-angle-right"></i> </i> and <i
+                                class="fa-solid fa-angle-left"></i>/script<i class="fa-solid fa-angle-right"></i> tags.
+                        </p>
+
+
+
+                        <div class="code_div">
+                            <h2>Example</h2>
+                            <div class="code">
+                                <code>
+                                <i
+                                class="fa-solid fa-angle-left"></i>script<i class="fa-solid fa-angle-right"></i>
+                                document.getElementById("demo").innerHTML = "My First JavaScript";
+                                <i
+                                class="fa-solid fa-angle-left"></i>/script<i class="fa-solid fa-angle-right"></i>
+                                </code>
+
+                            </div>
+                        </div>
+
+
+                        <h1>JavaScript Functions and Events</h1>
+                        <p>A JavaScript function is a block of JavaScript code, that can be executed when "called" for.
+                            <br>
+
+                            For example, a function can be called when an event occurs, like when the user clicks a
+                            button.
+                        </p>
+                        <h1>JavaScript in <i class="fa-solid fa-angle-left"></i>head<i
+                                class="fa-solid fa-angle-right"></i> or <i class="fa-solid fa-angle-left"></i>body<i
+                                class="fa-solid fa-angle-right"></i></h1>
+                        <p>You can place any number of scripts in an HTML document. <br>
+
+                            Scripts can be placed in the
+
+                            <i class="fa-solid fa-angle-left"></i>body<i class="fa-solid fa-angle-right"></i>, or in the
+
+                            <i class="fa-solid fa-angle-left"></i>head<i class="fa-solid fa-angle-right"></i> section of
+                            an HTML page, or in both.
+
+                        </p>
+
+                        <h1>JavaScript in <i class="fa-solid fa-angle-left"></i>head<i
+                                class="fa-solid fa-angle-right"></i> </h1>
+                        <p>In this example, a JavaScript function is placed in the
+
+                            <i class="fa-solid fa-angle-left"></i>head<i class="fa-solid fa-angle-right"></i> section of
+                            an HTML page. <br>
+
+                            The function is invoked (called) when a button is clicked:
+
+                        </p>
+                        <div class="code_div_img">
+                            <h2>Example</h2>
+                            <div class="code_img">
+                               <img src="image/doc head.png" alt="" width="700px" height="400px">
+
+
+                            </div>
+                        </div>
+
+                        <h1>JavaScript in <i class="fa-solid fa-angle-left"></i>body<i
+                            class="fa-solid fa-angle-right"></i> </h1>
+                    <p>In this example, a JavaScript function is placed in the
+
+                        <i class="fa-solid fa-angle-left"></i>body<i class="fa-solid fa-angle-right"></i> section of
+                        an HTML page. <br>
+
+                        The function is invoked (called) when a button is clicked:
+
+                    </p>
+                    <div class="code_div_img">
+                        <h2>Example</h2>
+                        <div class="code_img">
+                           <img src="image/doc body.png" alt="" width="700px" height="400px">
+                           
+
+                        </div>
+                    </div>
+
+
+                        
+
+
+                    </article>
+                </section>
+
+
+<!-- JavaScript output  -->
+                <section id="jsout">
+                    <h1>JavaScript Output</h1>
+                    <article>
+                        <h1>JavaScript Display Possibilities</h1>
+                        <p>
+                            JavaScript can "display" data in different ways:
+                            <ul style="list-style-type:circle">
+                             <li>Writing into an HTML element, using innerHTML. </li> 
+                          <li>Writing into the HTML output using document.write(). </li>  
+                         <li>Writing into an alert box, using window.alert().   </li>    
+                     <li>Writing into the browser console, using console.log().</li>
+                        </ul>
+                        </p>
+
+                        <h1>Using innerHTML</h1>
+                        <p>
+                            To access an HTML element, JavaScript can use the document.getElementById(id) method. <br>
+
+                            The id attribute defines the HTML element. The innerHTML property defines the HTML content:
+
+                        </p>
+
+                        <div class="code_div_img">
+                            <h2>Example</h2>
+                            <div class="code_img">
+                               <img src="image/doc inerhtml.png" alt="" width="700px" height="360px">
+                               
+    
+                            </div>
+                        </div>
+
+
+                        <h1>Using document.write()</h1>
+                        <p>
+                            For testing purposes, it is convenient to use document.write():
+
+                        </p>
+
+                        <div class="code_div_img">
+                            <h2>Example</h2>
+                            <div class="code_img">
+                               <img src="image/doc write.png" alt="" width="700px" height="310px">
+                               
+    
+                            </div>
+                        </div>
+
+
+
+                        <h1>UUsing console.log()</h1>
+                        <p>
+                            For debugging purposes, you can call the console.log() method in the browser to display data.
+
+                        </p>
+
+                        <div class="code_div_img">
+                            <h2>Example</h2>
+                            <div class="code_img">
+                               <img src="image/doc console.png" alt="" width="700px" height="310px">
+                               
+    
+                            </div>
+                        </div>
+
+
+
+
+
+                        
+
+
+                    </article>
+                </section>
+
+<!-- statements  -->
+
+
+                <section id="jsstat">
+                    <h1>JavaScript Statements
+                    </h1>
+                    <article>
+                        
+                        <p>
+                            JavaScript statements are composed of: <br>
+
+                            Values, Operators, Expressions, Keywords, and Comments <br>
+                            Most JavaScript programs contain many JavaScript statements. <br>
+
+                            The statements are executed, one by one, in the same order as they are written
+                        </p>
+
+                        <div class="code_div_img">
+                            <h2>Example</h2>
+                            <div class="code_img">
+                               <img src="image/doc statements.png" alt="" width="600px" height="90px">
+                               
+    
+                            </div>
+                        </div>
+                    </article>
+                </section> 
+<!-- syntex  -->
+                <section id="jssyntx">
+                    <h1>JavaScript Syntax
+
+                    </h1>
+                    <article>
+                        
+                        <p>
+                            JavaScript syntax is the set of rules, how JavaScript programs are constructed:
+  
+                        </p>
+
+                        <div class="code_div_img">
+                            <h2>Example</h2>
+                            <div class="code_img">
+                               <img src="image/doc syntex.png" alt="" width="500px" height="130px">
+                               
+    
+                            </div>
+                        </div>
+                    </article>
+                </section> 
+
+
+<!-- command -->
+
+<section id="jscomman">
+    <h1>JavaScript Comments
+    </h1>
+    <article>
+        
+        <p>
+            JavaScript comments can be used to explain JavaScript code, and to make it more readable.  <br>
+
+            JavaScript comments can also be used to prevent execution, when testing alternative code.
+
+        </p>
+
+<h1>Single Line Comments
+    </h1>
+<p>
+    Single line comments start with //. <br>
+
+Any text between // and the end of the line will be ignored by JavaScript (will not be executed). <br>
+
+This example uses a single-line comment before each code line:
+</p>
+        <div class="code_div_img">
+            <h2>Example</h2>
+            <div class="code_img">
+               <img src="image/doc singlecomment.png" alt="" width="500px" height="130px">
+               
+
+            </div>
+        </div>
+
+        <h1>Multi-line Comments
+        </h1>
+    <p>
+        Multi-line comments start with /* and end with */. <br>
+
+Any text between /* and */ will be ignored by JavaScript. <br>
+
+This example uses a multi-line comment (a comment block) to explain the code:
+    </p>
+            <div class="code_div_img">
+                <h2>Example</h2>
+                <div class="code_img">
+                   <img src="image/doc multicomment.png" alt="" width="500px" height="130px">
+                   
+    
+                </div>
+            </div>
+
+    </article>
+</section> 
+
+<!-- variabl -->
+<section id="jsvariab">
+    <h1>JavaScript Variables
+    </h1>
+    <article>
+        
+   
+
+<h1> Var
+    </h1>
+<p>
+    The var keyword was used in all JavaScript code from 1995 to 2015. <br>
+
+The let and const keywords were added to JavaScript in 2015. <br>
+
+The var keyword should only be used in code written for older browsers
+</p>
+        <div class="code_div_img">
+            <h2>Example</h2>
+            <div class="code_img">
+               <img src="image/doc varvariable.png" alt="" width="500px" height="130px">
+               
+
+            </div>
+        </div>
+
+        <h1>Let
+        </h1>
+    <p>
+        The let keyword was introduced in ES6 (2015) <br>
+
+Variables defined with let cannot be Redeclared <br>
+
+Variables defined with let must be Declared before use <br>
+
+Variables defined with let have Block Scope
+    </p>
+            <div class="code_div_img">
+                <h2>Example</h2>
+                <div class="code_img">
+                   <img src="image/doc letvariable.png" alt="" width="500px" height="130px">
+                   
+    
+                </div>
+            </div>
+            <h1>Const
+            </h1>
+        <p>
+            The const keyword was introduced in ES6 (2015) <br>
+
+            Variables defined with const cannot be Redeclared <br>
+            
+            Variables defined with const cannot be Reassigned <br>
+            
+            Variables defined with const have Block Scope
+        </p>
+                <div class="code_div_img">
+                    <h2>Example</h2>
+                    <div class="code_img">
+                       <img src="image/doc constvar.png" alt="" width="500px" height="130px">
+                       
+        
+                    </div>
+                </div>
+    </article>
+</section> 
+
+<!-- operators -->
+<section id="jsoper">
+    <h1>JavaScript Operators
+    </h1>
+    <article>
+        
+   
+
+<h1>Operators and Operands
+    </h1>
+<p>
+    The numbers (in an arithmetic operation) are called operands. <br>
+
+The operation (to be performed between the two operands) is defined by an operator.
+</p>
+        <div class="code_div_img">
+            <h2>Example</h2>
+            <div class="code_img">
+               <img src="image/doc operatrosand operant.png" alt="" width="500px" height="130px">
+               
+
+            </div>
+        </div>
+
+        <h1>JavaScript Arithmetic
+        </h1>
+    <p>
+        Arithmetic operators perform arithmetic on numbers (literals or variables).
+    </p>
+            <div class="code_div_img">
+                <h2>Example</h2>
+                <div class="code_imge" >
+                   <img src="image/doc arithimic01.png" alt="" width="500px" style="height: 200px; width: 350px;">
+                   
+    
+                </div>
+            </div>
+            <h1>Adding
+            </h1>
+        <p>
+            The addition operator (+) adds numbers:
+        </p>
+                <div class="code_div_img">
+                    <h2>Example</h2>
+                    <div class="code_img">
+                       <img src="image/doc adding.png" alt="" width="500px" height="130px">
+                       
+        
+                    </div>
+                </div>
+                <h1>Subtracting
+                </h1>
+            <p>
+                The subtraction operator (-) subtracts numbers.
+            </p>
+                    <div class="code_div_img">
+                        <h2>Example</h2>
+                        <div class="code_img">
+                           <img src="image/doc subtraction.png" alt="" width="500px" height="130px">
+                           
+            
+                        </div>
+                    </div>
+                    <h1>Multiplying
+                    </h1>
+                <p>
+                    The multiplication operator (*) multiplies numbers.
+                </p>
+                        <div class="code_div_img">
+                            <h2>Example</h2>
+                            <div class="code_img">
+                               <img src="image/doc multipling.png" alt="" width="500px" height="130px">
+                               
+                
+                            </div>
+                        </div>
+                        <h1>Dividing
+                        </h1>
+                    <p>
+                        The division operator (/) divides numbers.
+                    </p>
+                            <div class="code_div_img">
+                                <h2>Example</h2>
+                                <div class="code_img">
+                                   <img src="image/doc devide.png" alt="" width="500px" height="130px">
+                                   
+                    
+                                </div>
+                            </div>
+                            <h1>JavaScript Assignment
+                            </h1>
+                       
+                                <div class="code_div_img">
+                                    <h2>Example</h2>
+                                    <div class="code_img">
+                                       <img src="image/doc assigmient0203.png" alt="" width="500px" height="130px" style="height: 220px;">
+                                       
+                        
+                                    </div>
+                                </div>
+                                <h1>Shift Assignment Operators
+                                </h1>
+                           
+                                    <div class="code_div_img">
+                                        <h2>Example</h2>
+                                        <div class="code_img">
+                                           <img src="image/doc shift0203.png" alt="" width="500px" height="130px">
+                                           
+                            
+                                        </div>
+                                    
+                                    </div>
+                                    <h1>Bitwise Assignment Operators
+                                    </h1>
+                               
+                                        <div class="code_div_img">
+                                            <h2>Example</h2>
+                                            <div class="code_img">
+                                               <img src="image/doc bitwise02503.png" alt="" width="500px" height="130px">
+                                               
+                                
+                                            </div>
+                                        
+                                        </div>
+                                        <h1>Logical Assignment Operators
+                                        </h1>
+                                   
+                                            <div class="code_div_img">
+                                                <h2>Example</h2>
+                                                <div class="code_img">
+                                                   <img src="image/doc logical2.png" alt="" width="500px" height="130px">
+                                                   
+                                    
+                                                </div>
+                                            
+                                            </div>
+                                   
+                                           
+        </article>
+    </article>
+</section> 
+
+<!-- data type -->
+<section id="jsdatyp">
+    <h1>JavaScript Data Types
+    </h1>
+    <article>
+        
+   <p>
+
+
+    In programming, data types is an important concept. <br>
+
+    To be able to operate on variables, it is important to know something about the type. <br>
+    
+    Without data types, a computer cannot safely solve this: <br>
+
+    <h2>JavaScript has 8 Datatypes </h2>
+1. String <br>
+2. Number <br>
+3. Bigint <br>
+4. Boolean <br>
+5. Undefined <br>
+6. Null <br>
+7. Symbol <br>
+8. Object
+
+   </p>
+
+        <div class="code_div_img">
+            <h2>Example</h2>
+            <div class="code_img">
+               <img src="image/doc firstdata type.png" alt="" width="500px" height="130px" style="height: 250px; "">
+               
+
+            </div>
+        </div>
+
+        <h1>Strings
+        </h1>
+    <p>
+        A string (or a text string) is a series of characters like "John Doe". <br>
+
+Strings are written with quotes. You can use single or double quotes
+    </p>
+            <div class="code_div_img">
+                <h2>Example</h2>
+                <div class="code_img">
+                   <img src="image/doc stringdatatype.png" alt="" width="500px" height="130px" style="height: 100px;">
+                   
+    
+                </div>
+            </div>
+            <h1>Numbers
+            </h1>
+        <p>
+            All JavaScript numbers are stored as decimal numbers (floating point). <br>
+
+            Numbers can be written with, or without decimals:
+        </p>
+                <div class="code_div_img">
+                    <h2>Example</h2>
+                    <div class="code_img">
+                       <img src="image/doc numberdatatype.png" alt="" width="500px" height="130px" style="height: 100px;">
+                       
+        
+                    </div>
+                </div>
+    </article>
+</section> 
+
+<!-- functins -->
+
+<section id="jsfun">
+    <h1>JavaScript Functions
+
+    </h1>
+    <article>
+        
+        <p>
+            A JavaScript function is a block of code designed to perform a particular task. <br>
+
+A JavaScript function is executed when "something" invokes it (calls it)
+
+        </p>
+
+
+        <div class="code_div_img">
+            <h2>Example</h2>
+            <div class="code_img">
+               <img src="image/doc first function.png" alt="" width="500px" height="130px" style="height: 80px;">
+               
+
+            </div>
+        </div>
+
+        <h1>Function Syntax
+        </h1>
+    <p>
+        A JavaScript function is defined with the function keyword, followed by a name, followed by parentheses (). <br>
+
+        Function names can contain letters, digits, underscores, and dollar signs (same rules as variables). <br>
+        
+        The parentheses may include parameter names separated by commas: <br>
+        (parameter1, parameter2, ...)
+        
+        The code to be executed, by the function, is placed inside curly brackets: {}
+    </p>
+            <div class="code_div_img">
+                <h2>Example</h2>
+                <div class="code_img">
+                   <img src="image/doc function syntex.png" alt="" width="500px" height="130px" style="height: 80px;">
+                   
+    
+                </div>
+            </div>
+            <h1>Function Return
+            </h1>
+        <p>
+            When JavaScript reaches a return statement, the function will stop executing. <br>
+
+If the function was invoked from a statement, JavaScript will "return" to execute the code after the invoking statement. <br>
+
+Functions often compute a return value. The return value is "returned" back to the "caller":
+        </p>
+                <div class="code_div_img">
+                    <h2>Example</h2>
+                    <div class="code_img">
+                       <img src="image/doc retunr function.png" alt="" width="500px" height="130px" style="height: 140px;">
+                       
+        
+                    </div>
+                </div>
+                <h1>Functions Used as Variable Values
+                </h1>
+            <p>
+                Functions can be used the same way as you use variables, in all types of formulas, assignments, and calculations
+            </p>
+                    <div class="code_div_img">
+                        <h2>Example</h2>
+                        <div class="code_img">
+                           <img src="image/doc funcation used.png" alt="" width="500px" height="130px" style="width: 350px; height: 150px;">
+                           
+            
+                        </div>
+                    </div>
+
+    </article>
+</section> 
+
+<!-- object -->
+
+<section id="jsobj">
+    <h1>JavaScript Objects
+
+    </h1>
+    <article>
+        
+        <p>
+            In real life, a car is an object. <br>
+
+            A car has properties like weight and color, and methods like start and stop:
+
+        </p>
+
+
+        <div class="code_div_img">
+            <h2>Example</h2>
+            <div class="code_img">
+               <img src="image/doc object first (1).png" alt="" width="500px" height="130px"
+               style="height: 140px;">
+               
+             
+            </div>
+        </div>
+        <p>
+            All cars have the same properties, but the property values differ from car to car. <br>
+
+All cars have the same methods, but the methods are performed at different times.
+         </p>
+
+        <h1>JavaScript Objects
+        </h1>
+    <p>
+        You have already learned that JavaScript variables are containers for data values. <br>
+
+        This code assigns a simple value (Fiat) to a variable named car:
+    </p>
+            <div class="code_div_img">
+                <h2>Example</h2>
+                <div class="code_img">
+                   <img src="image/doc jsobject01.png" alt="" width="500px" height="130px"
+                   style="height: 60px;">
+                   
+    
+                </div>
+             
+            </div>
+            <p>
+                Objects are variables too. But objects can contain many values. <br>
+
+This code assigns many values (Fiat, 500, white) to a variable named car:
+            </p>
+            <div class="code_div_img">
+                <h2>Example</h2>
+                <div class="code_img">
+                   <img src="image/doc jsobject02.png" alt="" width="500px" height="130px"
+                   style="height: 60px;">
+                   
+    
+                </div>
+             
+            </div>
+            <h1>Object Definition
+            </h1>
+        <p>
+            You define (and create) a JavaScript object with an object literal:
+        </p>
+                <div class="code_div_img">
+                    <h2>Example</h2>
+                    <div class="code_img">
+                       <img src="image/doc objectdefinition.png" alt="" width="500px" height="130px"
+                       style="height: 130px;">
+                       
+        
+                    </div>
+                </div>
+                
+                    <h1>What is this?</h1>
+                        <p>
+                            In JavaScript, the this keyword refers to an object. <br>
+
+                            Which object depends on how this is being invoked (used or called). <br>
+                            
+                            The this keyword refers to different objects depending on how it is used:   
+                         </p>
+                                <div class="code_div_img">
+                                    <h2>Example</h2>
+                                    <div class="code_img">
+                                       <img src="image/doc what is this.png" alt="" width="500px" height="130px"
+                                       style="height: 130px;">
+                                       
+                        
+                                    </div>
+                                </div>
+                                <h1>Accessing Object Methods</h1>
+                                    <p>
+                                        You access an object method with the following syntax:
+                                     </p>
+                                            <div class="code_div_img">
+                                                <h2>Example</h2>
+                                                <div class="code_img">
+                                                   <img src="image/doc acc obj metghod.png" alt="" width="500px" height="130px" style="height: 60px;">
+                                                   
+                                    
+                                                </div>
+                                            </div>
+
+    </article>
+</section> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="help-fo">
+        <div class="prod addres">
+            <div class="ques">
+                <h3>PRODUCT</h3>
+                <i class="icon fa-solid fa-caret-down"></i>
+            </div>
+            <div class="ans">
+                <span> Website Templates </span>
+                <span> Website Builder </span>
+                <span> Online Store Builder</span>
+                <span> Multilingual Website</span>
+                <span> Domain Name</span>
+                <span> Professional Email</span>
+                <span> Web Design</span>
+                <span> Plans & Pricing</span>
+                <span> Webmail Login</span>
+                <span> My Site Login</span>
+
+            </div>
+        </div>
+
+
+        <div class="feat addres">
+            <div class="ques">
+                <h3>FEATURES</h3>
+                <i class="icon fa-solid fa-caret-down"></i>
+            </div>
+            <div class="ans">
+                <span> Quick-launch Templates</span>
+                <span> Mobile-Friendly Editor</span>
+                <span>Mobile Responsive Websites</span>
+                <span> Image Editor</span>
+                <span>Free Stock Images</span>
+                <span>Website Video & Audio</span>
+                <span>Smart SEO Tools</span>
+                <span>Google Analytics</span>
+                <span>Social Media Integrations</span>
+                <span> Contact Forms</span>
+                <span>Custom HTML Capabilities</span>
+
+            </div>
+        </div>
+
+
+
+        <div class="comp addres">
+            <div class="ques">
+                <h3>COMPANY</h3>
+                <i class="icon fa-solid fa-caret-down"></i>
+            </div>
+            <div class="ans">
+                <span> Our Blog </span>
+                <span> About Us </span>
+                <span> Careers</span>
+                <span> Press and Updates</span>
+                <span> Contact Us</span>
+                <span> Reviews</span>
+                <span> Terms & Conditions</span>
+                <span> Privacy Policy</span>
+                <span> Cookie Policy</span>
+
+                <span> Domain Registration Agreement</span>
+                <span> ICANN Registrant Rights and Responsibilities</span>
+                <span> ICANN Registrant Educational Materials</span>
+                <span> ICANN Registrants' Benefits</span>
+
+            </div>
+        </div>
+
+        <div class="supt addres">
+            <div class="ques">
+                <h3>SUPPORT</h3>
+                <i class="icon fa-solid fa-caret-down"></i>
+            </div>
+            <div class="ans">
+                <span> Resources</span>
+                <span> Website Builder and Web Design Articles</span>
+                <span> Learning Center</span>
+                <span> FAQ</span>
+                <span> Forgot Password</span>
+                <a href="https://www.facebook.com/profile.php?id=100056472351932" target="_blank"><i
+                    class="fa-brands fa-facebook" id="face"></i> Facebook</a>
+            <a href="https://www.instagram.com/_pabitra___m/" target="_blank" rel="noopener noreferrer"><i
+                    class="fa-brands fa-instagram" id="inst"></i> Instagram</a>
+            <a href="https://www.linkedin.com/in/pabitra-mondal-/" target="_blank" rel="noopener noreferrer"><i
+                    class="fa-brands fa-linkedin" id="link"></i> Linkedin</a>
+            <a href="https://github.com/Pabitra-M" target="_blank" rel="noopener noreferrer"><i
+                    class="fa-brands fa-github" id="git"></i> github</a>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/doc.js"></script>
+    <script src="js/code.jquery.com_jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(".iconbr").click(function () {
+            $(".side_bar").toggle();
+        
+        })
+    </script>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

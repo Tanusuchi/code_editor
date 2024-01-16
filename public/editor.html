@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor</title>
+    <link rel="stylesheet" href="css/editor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <header class="header">
+        <img src="image/Editox .png" alt="logo" class="logo">
+
+        <nav class="navbar">
+            <ul class="navlis">
+                <li><a class="navli" href="/">HOME</a></li>
+                <li><a class="navli" href="">Editor</a></li>
+                <li><a class="navli" href="/about.html">about</a></li>
+                <li><a class="navli" href="/page.html">documant</a></li>
+                <li><div class="dropdown">
+                    <button class="dropbtn">Resources</button>
+                    <!-- The dropdown content -->
+                    <div class="dropdown-content">
+                        <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
+                        <a href="https://www.w3schools.com/html/default.asp" target="_blank">w3schools</a>
+                      <a href="#">Item 3</a>
+                    </div></li>
+                <li><a class="navli" href="/contct.html">contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="mobile-nav">
+            <ion-icon name="reorder-three-outline" class="mabile-nav-icon"></ion-icon>
+            <ion-icon name="close-outline" class="mabile-nav-icon"></ion-icon>
+        </div>
+
+    </header>
+
+    <div class="section">
+        
+
+    <div class="code-editor"> 
+        
+        <div class="code">
+            <div class="butt">
+                <button id="htmlbt" class="toggle-button" data-target="block1">HTML</button>
+                <button id="cssbt" class="toggle-button" data-target="block2">CSS</button>
+                <button id="jsbt" class="toggle-button" data-target="block3">JavaScript</button>
+            </div>
+            
+            <div id="block1" class="html-code">
+                <h1><img src="image/html.png" alt="html">HTML</h1>
+                <textarea id="mytextaria" spellcheck="false" ></textarea>
+            </div>
+
+            <div id="block2" class="css-code">
+                <h1><img src="image/CSS.png" alt="css">CSS</h1>
+                <textarea id="mytextaria" spellcheck="false" ></textarea>
+            </div>
+
+            <div id="block3" class="js-code">
+                <h1><img src="image/js.png" alt="js">JS</h1>
+                <textarea spellcheck="false" id="mytextaria"></textarea>
+            </div>
+        </div>
+        <iframe class="result"></iframe>
+    </div>
+
+</div>
+
+
+
+
+    <script src="js/editor.js"></script>
+    <script src="js/code.jquery.com_jquery-3.7.1.min.js"></script>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script>
+
+
+        $(document).ready(function() {
+          $(".toggle-button").click(function() {
+            // Get the target block ID from the data attribute
+           var targetBlock = $(this).data("target");
+    
+            // Hide all blocks
+            $("div[id^='block']").hide();
+    
+            // Show the target block
+            $("#" + targetBlock).show();
+  });
+});
+
+    </script>
+
+
+ 
+
+
+    
+</body>
+
+</html>

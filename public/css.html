@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/cssdig.css">
+</head>
+
+<body>
+    <header class="header">
+        <img src="image/Editox .png" alt="logo" class="logo">
+
+        <nav class="navbar">
+            <ul class="navlis">
+                <li><a class="navli" href="/">HOME</a></li>
+                <li><a class="navli" href="/neweditor.html">Editor</a></li>
+                <li><a class="navli" href="/about.html">about</a></li>
+                <li><a class="navli" href="#">documant</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Resources</button>
+                        <!-- The dropdown content -->
+                        <div class="dropdown-content">
+                            <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
+                            <a href="https://fonts.google.com/" target="_blank">Google fonts</a>
+                            <a href="https://fontawesome.com/search?m=free&o=r" target="_blank">Font Awesome</a>
+                        </div>
+                </li>
+                <li><a class="navli" href="/contct.html">contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="mobile-nav">
+            <ion-icon name="reorder-three-outline" class="mabile-nav-icon"></ion-icon>
+            <ion-icon name="close-outline" class="mabile-nav-icon"></ion-icon>
+        </div>
+
+
+
+    </header>
+
+
+    <div class="main">
+
+
+        <div class="sc_nav">
+            <div class="lan_item">
+                <div class="iconbr fa-solid fa-bars">
+                </div>
+                <ul>
+                    <li><a href="/page.html">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="/documant.html">JAVASCRIPT</a></li>
+                </ul>
+
+
+            </div>
+        </div>
+
+        <div class="maincont">
+
+            <div class="side_bar">
+                <h1>CSS Tutorial</h1>
+                <br>
+                <br>
+                <ul>
+                    <a href="#Introduction_to_CSS">
+                        <li>Introduction to CSS</li>
+                    </a>
+                    <a href="#CSS_Selector">
+                        <li>CSS Selector</li>
+                    </a>
+                    <h2>How To Add CSS</h2>
+                    <a href="#Inline_CSS">
+                        <li>Inline CSS</li>
+                    </a>
+                    <a href="#Internal_CSS">
+                        <li>Internal CSS</li>
+                    </a>
+                    <a href="#External_CSS">
+                        <li>External CSS</li>
+                    </a>
+                    <h2>CSS Properties</h2>
+                    <a href="#CSS_Background">
+                        <li>CSS Background</li>
+                    </a>
+                    <a href="#CSS_Border">
+                        <li>CSS Border</li>
+                    </a>
+                    <a href="#CSS_Display">
+                        <li>CSS Display</li>
+                    </a>
+                    <a href="#CSS_Float">
+                        <li>CSS Float</li>
+                    </a>
+                    <a href="#CSS_Font">
+                        <li>CSS Font</li>
+                    </a>
+                    <a href="#CSS_Line_Height">
+                        <li>CSS Line Height</li>
+                    </a>
+                    <a href="#CSS_Margin">
+                        <li>CSS Margin</li>
+                    </a>
+                    <a href="#CSS_Padding">
+                        <li>CSS Padding
+                    </a>
+                    <a href="#CSS_Overflow">
+                        <li>CSS Overflow</li>
+                    </a>
+                    <a href="#CSS_Opacity">
+                        <li>CSS Opacity</li>
+                    </a>
+
+                </ul>
+
+
+            </div>
+            <div class="main_con">
+                <section id="Introduction_to_CSS">
+                    <h2>CSS Tutorial</h2>
+                    <article>
+                        <p>CSS tutorial or CSS 3 tutorial provides basic and advanced concepts of CSS technology. Our
+                            CSS tutorial is developed for beginners and professionals. The major points of CSS are given
+                            below:</p>
+                        <br>
+
+                        <ul>
+                            <li>CSS stands for Cascading Style Sheet.</li>
+                            <li>CSS is used to design HTML tags.</li>
+                            <li>HTML is widely used language on the web.</li>
+                            <li>HTML, CSS and JavaScript are used for web designing. It helps the web designers to apply
+                                style on HTML tags.</li>
+                        </ul>
+
+                    </article>
+                </section>
+                <section id="CSS_Selector">
+                    <h2>CSS Selector</h2>
+                    <br><br>
+                    <p>CSS selectors are used to select the content you want to style. Selectors are the part of CSS
+                        rule set. CSS selectors select HTML elements according to its id, class, type, attribute etc.
+                    </p>
+                    <br>
+                    <p><b>There are several different types of selectors in CSS:</b></p><br>
+                    <ol>
+                        <li>CSS Element Selector</li>
+                        <li>CSS Id Selector</li>
+                        <li>CSS Class Selector</li>
+                        <li>CSS Universal Selector</li>
+                        <li>CSS Group Selector</li>
+                    </ol>
+                    <br>
+                    <ol>
+                        <li><b>CSS Element Selector</b></li>
+                        <div>
+                            <p></p><span>
+                                << /span>!DOCTYPE html></p>
+                                    <p><span>
+                                            << /span>html></p>
+                                    <p><span>
+                                            << /span>head></p>
+                                    <p><span>
+                                            << /span>style></p>
+                                    <p>p{</p>
+                                    <p>&nbsp;&nbsp;&nbsp;text-align: center;</p>
+                                    <p>&nbsp;&nbsp;&nbsp;color: blue;
+                                    <p>}</p>
+                                    <p><span>
+                                            << /span>/style></p>
+                                    <p><span>
+                                            << /span>/head></p>
+                                    <p><span>
+                                            << /span>body></p>
+                                    <p><span>
+                                            << /span>p>This style will be applied on every paragraph. <span>
+                                                    << /span>/p> </p>
+                                    <p><span>
+                                            << /span>/body> </p>
+                                    <p><span>
+                                            << /span>/html></p>
+                        </div>
+                        <li><b>CSS Id Selector</b></li>
+                        <div>
+                            <p>#para1 {></p>
+                            <p>&nbsp; &nbsp; &nbsp; text-align: center;</p>
+                            <p>&nbsp; &nbsp; &nbsp; color: red;</p>
+                            <p>}</p>
+                        </div>
+                        <li><b>CSS class Selector</b></li>
+                        <div>
+                            <p>.center {</p>
+                            <p>&nbsp; &nbsp; &nbsp;text-align: center;</p>
+                            <p>&nbsp; &nbsp; &nbsp;color: red;</p>
+                            <p>}</p>
+                        </div>
+                        <li><b>CSS Universal Selector</b></li>
+                        <div>
+                            <p>* {</p>
+                            <p>&nbsp; &nbsp; &nbsp;text-align: center;</p>
+                            <p>&nbsp; &nbsp; &nbsp;color: blue;</p>
+                            <p>}</p>
+                        </div>
+                        <li><b>CSS Grouping Selector</b></li>
+                        <div>
+                            <p>h1, h2, p {</p>
+                            <p>&nbsp; &nbsp; &nbsp;text-align: center;</p>
+                            <p>&nbsp; &nbsp; &nbsp;color: red;</p>
+                            <p>}</p>
+                        </div>
+                    </ol>
+                </section>
+                <section id="Inline_CSS">
+                    <h2>Inline CSS</h2>
+                    <article>
+                        <p>We can apply CSS in a single element by inline CSS technique.</p>
+                        <br>
+                        <p>The inline CSS is also a method to insert style sheets in HTML document. This method
+                            mitigates some advantages of style sheets so it is advised to use this method sparingly.</p>
+                        <br>
+                        <p>If you want to use inline CSS, you should use the style attribute to the relevant tag.</p>
+                        <br>
+                        <p><b>Syntax:</b></p>
+                        <br>
+                        <div>
+                            <p><span>
+                                    << /span>htmltag style="cssproperty1:value; cssproperty2:value;"> <span>
+                                            << /span>/htmltag> </p>
+                        </div>
+                        <br>
+                        <p><b>Example:</b></p>
+                        <br>
+                        <div>
+                            <p><span>
+                                    << /span>h2 style="color:red;margin-left:40px;">Inline CSS is applied on this
+                                        heading. <span>
+                                            << /span>/h2> </p>
+                            <p><span>
+                                    << /span>p>This paragraph is not affected. <span>
+                                            << /span>/p> </p>
+                        </div>
+                    </article>
+                </section>
+                <section id="External_CSS">
+                    <h2>External CSS</h2>
+                    <article>
+                        <p>The external style sheet is generally used when you want to make changes on multiple pages.
+                            It is ideal for this condition because it facilitates you to change the look of the entire
+                            web site by changing just one file.</p><br>
+                        <p>It uses the
+                            <link> tag on every pages and the
+                            <link> tag should be put inside the head section.
+                        </p><br>
+                        <p><b>Example:</b></p><br>
+                        <div>
+                            <p><span>
+                                    << /span>head></p>
+                            <p><span>
+                                    << /span>link rel="stylesheet" type="text/css" href="mystyle.css"></p>
+                            <p><span>
+                                    << /span>/head></p>
+                        </div>
+                    </article>
+                </section>
+                <section id="Internal_CSS">
+                    <h2>Internal CSS</h2>
+                    <article>
+                        <p>The internal style sheet is used to add a unique style for a single document. It is defined
+                            in <span>
+                                << /span>head> section of the HTML page inside the <span>
+                                        << /span>style> tag.</p>
+                        <br>
+                        <p><b>Example:</b></p><br>
+                        <div>
+                            <p><span>
+                                    << /span>!DOCTYPE html></p>
+                            <p><span>
+                                    << /span>html></p>
+                            <p><span>
+                                    << /span>head></p>
+                            <p><span>
+                                    << /span>style></p>
+                            <p>body { </p>
+                            <p>&nbsp;&nbsp;&nbsp;background-color: linen;
+                            </p>
+                            <p>}</p>
+                            <p>h1 { </p>
+                            <p>&nbsp;&nbsp;&nbsp;color: red;</p>
+                            <p>&nbsp;&nbsp;&nbsp;margin-left: 80px;</p>
+                            <p>}</p>
+                            <p><span>
+                                    << /span>/style></p>
+                            <p><span>
+                                    << /span>/head></p>
+                            <p><span>
+                                    << /span>body></p>
+                            <p>&nbsp;&nbsp;&nbsp;<span>
+                                    << /span>h1>The internal style sheet is applied on this heading. <span>
+                                            << /span>/h1></p>
+                            <p>&nbsp;&nbsp;&nbsp;<span>
+                                    << /span>p>This paragraph will not be affected. <span>
+                                            << /span>/p></p>
+                            <p><span>
+                                    << /span>/body></p>
+                            <p><span>
+                                    << /span>/html></p>
+                        </div>
+                    </article>
+                </section>
+                <section id="CSS_Background">
+                    <h2>CSS Background</h2>
+                    <article>
+                        <p>CSS background property is used to define the background effects on element. There are 5 CSS
+                            background properties that affects the HTML elements:</p><br>
+                        <ol>
+                            <li>background-color</li>
+                            <li>background-image</li>
+                            <li>background-repeat</li>
+                            <li>background-attachment</li>
+                            <li>background-position</li>
+                        </ol><br>
+                        <p><b>CSS background-color Example:</b></p><br>
+                        <div>
+                            <p><span>
+                                    << /span>!DOCTYPE html></p>
+                            <p><span>
+                                    << /span>html></p>
+                            <p><span>
+                                    << /span>head></p>
+                            <p><span>
+                                    << /span>style></p>
+                            <p>h2,p{</p>
+                            <p>background-color: #b0d4de;</p>
+                            <p>}</p>
+                            <p><span>
+                                    << /span>/style></p>
+                            <p><span>
+                                    << /span>/head></p>
+                            <p><span>
+                                    << /span>body></p>
+                            <p><span>
+                                    << /span>h2>My first CSS page. <span>
+                                            << /span>/h2></p>
+                            <p><span>
+                                    << /span>p>Hello. This is an example of CSS background-color. <span>
+                                            << /span>/p></p>
+                            <p><span>
+                                    << /span>/body></p>
+                            <p><span>
+                                    << /span>/html></p>
+                        </div><br>
+                        <p><b>CSS background-image Example:</b></p><br>
+                        <div>
+                            <p><span>
+                                    << /span>!DOCTYPE html></p>
+                            <p><span>
+                                    << /span>html></p>
+                            <p><span>
+                                    << /span>head></p>
+                            <p><span>
+                                    << /span>style></p>
+                            <p>body {</p>
+                            <p>background-image: url("url");</p>
+                            <p>margin-left:100px;</p>
+                            <p>}</p>
+                            <p><span>
+                                    << /span>/style></p>
+                            <p><span>
+                                    << /span>/head></p>
+                            <p><span>
+                                    << /span>body></p>
+                            <p><span>
+                                    << /span>h1>Hello Javatpoint.com <span>
+                                            << /span>/h1></p>
+                            <p><span>
+                                    << /span>/body></p>
+                            <p><span>
+                                    << /span>/html></p>
+                        </div>
+                        <br>
+                        <p><b>background-repeat:</b></p>
+                        <br>
+                        <div>
+                            <p>body {</p>
+                            <p>&nbsp;&nbsp;&nbsp;background-image: url("paper.gif");</p>
+                            <p>&nbsp;&nbsp;&nbsp;background-repeat: repeat-y;</p>
+                            <p>}</p>
+                        </div>
+                        <br>
+                        <p><b>background-attachment:</b></p>
+                        <br>
+                        <div>
+                            <p>body {</p>
+                            <p>&nbsp;&nbsp;&nbsp;background-image: url("img_tree.gif");</p>
+                            <p>&nbsp;&nbsp;&nbsp;background-repeat: no-repeat;</p>
+                            <p>&nbsp;&nbsp;&nbsp;background-attachment: fixed;</p>
+                            <p>}</p>
+                        </div>
+                        <br>
+                        <p><b>background-position:</b></p>
+                        <br>
+                        <div>
+                            <p>body {</p>
+                            <p>&nbsp;&nbsp;&nbsp;background-image: url('w3css.gif');</p>
+                            <p>&nbsp;&nbsp;&nbsp;background-repeat: no-repeat;</p>
+                        </div>
+                    </article>
+                </section>
+                <section id="CSS_Border">
+                    <h2>CSS Border</h2>
+                    <article>
+                        <p>The CSS border is a shorthand property used to set the border on an element.The CSS border
+                            properties are use to specify the style, color and size of the border of an element. The CSS
+                            border properties are given below</p>
+                        <ul>
+                            <li>border-style</li>
+                            <li>border-color</li>
+                            <li>border-width</li>
+                            <li>border-radius</li>
+                        </ul>
+                        <br>
+                        <p><b>CSS Border Basic Use:</b></p>
+                        <br>
+                        <div>
+                            <p>p.dotted {border-style: dotted;}</p>
+                            <p>p.dashed {border-style: dashed;}</p>
+                            <p>p.solid {border-style: solid;}</p>
+                            <p>p.double {border-style: double;}</p>
+                            <p>p.groove {border-style: groove;}</p>
+                            <p>p.ridge {border-style: ridge;}</p>
+                            <p>p.inset {border-style: inset;}</p>
+                            <p>p.outset {border-style: outset;}</p>
+                            <p>p.none {border-style: none;}</p>
+                            <p>p.hidden {border-style: hidden;}</p>
+                            <p>p.mix {border-style: dotted dashed solid double;}</p>
+                        </div>
+                    </article>
+                </section>
+                <section id="CSS_Display">
+                    <h2>CSS Display</h2>
+                    <article>
+                        <p>CSS display is the most important property of CSS which is used to control the layout of the
+                            element. It specifies how the element is displayed.</p><br>
+                        <p>Every element has a default display value according to its nature. Every element on the
+                            webpage is a rectangular box and the CSS property defines the behavior of that rectangular
+                            box.</p>
+                        <p>There are following CSS display values which are commonly used.</p>
+                        <ol>
+                            <li>display: inline;</li>
+                            <li>display: inline-block;</li>
+                            <li>display: block;</li>
+                            <li>display: run-in;</li>
+                            <li>display: none;</li>
+                        </ol>
+                        <br>
+                        <p><b>CSS display Basic Use:</b></p>
+                        <br>
+                        <div>
+                            <p>p.ex1 {display: none;}</p>
+                            <p>p.ex2 {display: inline;}</p>
+                            <p>p.ex3 {display: block;}</p>
+                            <p>p.ex3 {display: block;}</p>
+                        </div>
+                    </article>
+                </section>
+                <section id="CSS_Float">
+                    <h2>CSS Float</h2>
+                    <article>
+                        <p>The CSS float property is a positioning property. It is used to push an element to the left
+                            or right, allowing other element to wrap around it. It is generally used with images and
+                            layouts.</p><br>
+                        <p>To understand its purpose and origin, let's take a look to its print display. In the print
+                            display, image is set into the page such that text wraps around it as needed.</p><br>
+                        <p><b>CSS Float Property Basic Use:</b></p>
+                        <br>
+                        <div>
+                            <p>#img {</p>
+                            <p>&nbsp;&nbsp;&nbsp;float: right;</p>
+                            <p>}</p>
+                            <p>#img1 {</p>
+                            <p>&nbsp;&nbsp;&nbsp;float: left;</p>
+                            <p>}</p>
+                            <p>#img2 {</p>
+                            <p>&nbsp;&nbsp;&nbsp;float: none;</p>
+                            <p>}</p>
+                        </div>
+                    </article>
+                </section>
+                <section id="CSS_Font">
+                    <h2>CSS Font</h2>
+                    <article>
+                        <p>CSS Font property is used to control the look of texts. By the use of CSS font property you
+                            can change the text size, color, style and more. You have already studied how to make text
+                            bold or underlined. Here, you will also know how to resize your font using percentage.</p>
+                        <br>
+                        <p><b>These are some important font attributes:</b></p><br>
+                        <ol>
+                            <li>CSS Font color: This property is used to change the color of the text. (standalone
+                                attribute)</li>
+                            <li>CSS Font family: This property is used to change the face of the font.</li>
+                            <li>CSS Font size: This property is used to increase or decrease the size of the font.</li>
+                            <li>CSS Font style: This property is used to make the font bold, italic or oblique.</li>
+                            <li>CSS Font variant: This property creates a small-caps effect.</li>
+                            <li>CSS Font weight: This property is used to increase or decrease the boldness and
+                                lightness of the font.</li>
+                        </ol>
+                        <br>
+                        <p><b>CSS Font Basic Use:</b></p>
+                        <br>
+                        <div>
+                            <p>.p1 {</p>
+                            <p>&nbsp;&nbsp;&nbsp;font-family: "Times New Roman", Times, serif;</p>
+                            <p>}</p>
+                            <p>.p2 {</p>
+                            <p>&nbsp;&nbsp;&nbsp;font-family: Arial, Helvetica, sans-serif;</p>
+                            <p>}</p>
+                            <p>.p3 {</p>
+                            <p>&nbsp;&nbsp;&nbsp; font-family: "Lucida Console", "Courier New", monospace;</p>
+                            <p>}</p>
+                        </div>
+                    </article>
+                </section>
+                <section id="CSS_Line_Height">
+                    <h2>CSS Line Height</h2>
+                    <article>
+                        <p>The CSS line height property is used to define the minimal height of line boxes within the
+                            element. It sets the differences between two lines of your content.</p><br>
+                        <p>It defines the amount of space above and below inline elements. It allows you to set the
+                            height of a line of independently from the font size.</p>
+                        <br>
+                        <p><b>CSS line-height Besic Use:</b></p>
+                        <br>
+                        <div>
+                            <p>div.a {</p>
+                            <p>&nbsp;&nbsp;&nbsp;line-height: normal;</p>
+                            <p>}</p>
+                            <p>div.b {</p>
+                            <p>&nbsp;&nbsp;&nbsp;line-height: 1.6;</p>
+                            <p>}</p>
+                            <p>div.c {</p>
+                            <p>&nbsp;&nbsp;&nbsp;line-height: 80%;</p>
+                            <p>}</p>
+                            <p>div.d {</p>
+                            <p>&nbsp;&nbsp;&nbsp;line-height: 200%;</p>
+                            <p>}</p>
+                        </div>
+                    </article>
+                </section>
+                <section id="CSS_Margin">
+                    <h2>CSS Margin</h2>
+                    <article>
+                        <p>CSS Margin property is used to define the space around elements. It is completely transparent
+                            and doesn't have any background color. It clears an area around the element.Top, bottom,
+                            left and right margin can be changed independently using separate properties. You can also
+                            change all properties at once by using shorthand margin property.</p><br>
+                        <p><b>CSS Margin Properties</b></p><br>
+                        <ul>
+                            <li><b>margin:</b>This property is used to set all the properties in one declaration.</li>
+                            <li><b>margin-left:</b>it is used to set left margin of an element.</li>
+                            <li><b>margin-right:</b>It is used to set right margin of an element.</li>
+                            <li><b>margin-top:</b>It is used to set top margin of an element.</li>
+                            <li><b>margin-bottom:</b>It is used to set bottom margin of an element.</li>
+                        </ul>
+                        <br>
+                        <p><b>CSS Margin Basic Use:</b></p><br>
+                        <div>
+                            <p>p {</p>
+                            <p>&nbsp;&nbsp;&nbsp;margin-top: 100px;</p>
+                            <p>&nbsp;&nbsp;&nbsp;margin-bottom: 100px;</p>
+                            <p>&nbsp;&nbsp;&nbsp;margin-right: 150px;</p>
+                            <p>&nbsp;&nbsp;&nbsp;margin-left: 80px;</p>
+                            <p>}</p>
+                        </div>
+                    </article>
+                </section>
+                <section id="CSS_Padding">
+                    <h2>CSS Padding</h2>
+                    <article>
+                        <p>CSS Padding property is used to define the space between the element content and the element
+                            border.It is different from CSS margin in the way that CSS margin defines the space around
+                            elements. CSS padding is affected by the background colors. It clears an area around the
+                            content.Top, bottom, left and right padding can be changed independently using separate
+                            properties. You can also change all properties at once by using shorthand padding property.
+
+                        </p>
+                        <br>
+                        <p><b>CSS Padding Properties</b></p><br>
+                        <ul>
+                            <li><b>padding:</b>It is used to set all the padding properties in one declaration.</li>
+                            <li><b>padding-left:</b>It is used to set left padding of an element.</li>
+                            <li><b>padding-right:</b>It is used to set left padding of an element.</li>
+                            <li><b>padding-top:</b>It is used to set top padding of an element.</li>
+                            <li><b>padding-bottom:</b>It is used to set bottom padding of an element.</li>
+                        </ul>
+                        <br>
+                        <p><b>CSS Padding Values</b></p>
+                        <br>
+                        <ul>
+                            <li><b>length:</b>It is used to define fixed padding in pt, px, em etc.</li>
+                            <li><b>percentage:</b>It defines padding in % of containing element.</li>
+                        </ul><br>
+                        <p><b>Basic Use:</b></p>
+                        <br>
+                        <div>
+                            <p>div {</p>
+                            <p>padding-top: 50px;</p>
+                            <p>padding-right: 30px;</p>
+                            <p>padding-bottom: 50px;</p>
+                            <p>padding-left: 80px;</p>
+                            <p>}</p>
+                        </div>
+                    </article>
+                </section>
+                <section id="CSS_Overflow">
+                    <h2>CSS Overflow</h2>
+                    <article>
+                        <p>The CSS overflow property specifies how to handle the content when it overflows its block
+                            level container.We know that every single element on a page is a rectangular box and the
+                            size, positioning and behavior of these boxes are controlled via CSS.Let's take an example:
+                            If you don't set the height of the box, it will grow as large as the content. But if you set
+                            a specific height or width of the box and the content inside cannot fit then what will
+                            happen. The CSS overflow property is used to overcome this problem. It specifies whether to
+                            clip content, render scroll bars, or just display content.</p><br>
+                        <p><b>CSS Overflow property values</b></p><br>
+                        <ul>
+                            <li><b>visible:</b>It specifies that overflow is not clipped. it renders outside the
+                                element's box.this is a default value.</li>
+                            <li><b>hidden:</b>It specifies that the overflow is clipped, and rest of the content will be
+                                invisible.</li>
+                            <li><b>scroll:</b>It specifies that the overflow is clipped, and a scroll bar is used to see
+                                the rest of the content.</li>
+                            <li><b>auto:</b>It specifies that if overflow is clipped, a scroll bar is needed to see the
+                                rest of the content.</li>
+                            <li><b>inherit:</b>It inherits the property from its parent element.</li>
+                            <li><b>initial:</b>It is used to set the property to its initial value.</li>
+                        </ul>
+                        <br>
+                        <p><b>Basic Use:</b></p>
+                        <br>
+                        <div>
+                            <p>div {</p>
+                            <p>&nbsp;&nbsp;&nbsp;width: 200px;</p>
+                            <p>&nbsp;&nbsp;&nbsp;height: 65px;</p>
+                            <p>&nbsp;&nbsp;&nbsp;background-color: coral;</p>
+                            <p>&nbsp;&nbsp;&nbsp;overflow: visible;</p>
+                            <p>}</p>
+                        </div>
+                    </article>
+                </section>
+                <section id="CSS_Opacity">
+                    <h2>CSS Opacity</h2>
+                    <article>
+                        <p>The CSS opacity property is used to specify the transparency of an element. In simple word,
+                            you can say that it specifies the clarity of the image.In technical terms, Opacity is
+                            defined as degree in which light is allowed to travel through an object.</p>
+                        <br>
+                        <p><b>CSS Opacity basic use:</b></p><br>
+                        <div>
+                            <p>img{</p>
+                            <p>&nbsp;&nbsp;&nbsp;opacity:0.5;</p>
+                            <p>}</p>
+                        </div>
+                    </article>
+                </section>
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="help-fo">
+            <div class="prod addres">
+                <div class="ques">
+                    <h3>PRODUCT</h3>
+                    <i class="icon fa-solid fa-caret-down"></i>
+                </div>
+                <div class="ans">
+                    <span> Website Templates </span>
+                    <span> Website Builder </span>
+                    <span> Online Store Builder</span>
+                    <span> Multilingual Website</span>
+                    <span> Domain Name</span>
+                    <span> Professional Email</span>
+                    <span> Web Design</span>
+                    <span> Plans & Pricing</span>
+                    <span> Webmail Login</span>
+                    <span> My Site Login</span>
+
+                </div>
+            </div>
+
+
+            <div class="feat addres">
+                <div class="ques">
+                    <h3>FEATURES</h3>
+                    <i class="icon fa-solid fa-caret-down"></i>
+                </div>
+                <div class="ans">
+                    <span> Quick-launch Templates</span>
+                    <span> Mobile-Friendly Editor</span>
+                    <span>Mobile Responsive Websites</span>
+                    <span> Image Editor</span>
+                    <span>Free Stock Images</span>
+                    <span>Website Video & Audio</span>
+                    <span>Smart SEO Tools</span>
+                    <span>Google Analytics</span>
+                    <span>Social Media Integrations</span>
+                    <span> Contact Forms</span>
+                    <span>Custom HTML Capabilities</span>
+
+                </div>
+            </div>
+
+
+
+            <div class="comp addres">
+                <div class="ques">
+                    <h3>COMPANY</h3>
+                    <i class="icon fa-solid fa-caret-down"></i>
+                </div>
+                <div class="ans">
+                    <span> Our Blog </span>
+                    <span> About Us </span>
+                    <span> Careers</span>
+                    <span> Press and Updates</span>
+                    <span> Contact Us</span>
+                    <span> Reviews</span>
+                    <span> Terms & Conditions</span>
+                    <span> Privacy Policy</span>
+                    <span> Cookie Policy</span>
+
+                    <span> Domain Registration Agreement</span>
+                    <span> ICANN Registrant Rights and Responsibilities</span>
+                    <span> ICANN Registrant Educational Materials</span>
+                    <span> ICANN Registrants' Benefits</span>
+
+                </div>
+            </div>
+
+            <div class="supt addres">
+                <div class="ques">
+                    <h3>SUPPORT</h3>
+                    <i class="icon fa-solid fa-caret-down"></i>
+                </div>
+                <div class="ans">
+                    <span> Resources</span>
+                    <span> Website Builder and Web Design Articles</span>
+                    <span> Learning Center</span>
+                    <span> FAQ</span>
+                    <span> Forgot Password</span>
+                    <a href="https://www.facebook.com/profile.php?id=100056472351932" target="_blank"><i
+                            class="fa-brands fa-facebook" id="face"></i> Facebook</a>
+                    <a href="https://www.instagram.com/_pabitra___m/" target="_blank" rel="noopener noreferrer"><i
+                            class="fa-brands fa-instagram" id="inst"></i> Instagram</a>
+                    <a href="https://www.linkedin.com/in/pabitra-mondal-/" target="_blank" rel="noopener noreferrer"><i
+                            class="fa-brands fa-linkedin" id="link"></i> Linkedin</a>
+                    <a href="https://github.com/Pabitra-M" target="_blank" rel="noopener noreferrer"><i
+                            class="fa-brands fa-github" id="git"></i> github</a>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/css.js"></script>
+    <script src="js/code.jquery.com_jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(".iconbr").click(function () {
+            $(".side_bar").toggle();
+        })
+    </script>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
